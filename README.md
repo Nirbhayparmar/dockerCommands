@@ -25,3 +25,16 @@
 - (-all) - to get ids or info about all the containers
   
 - [docker documantation](https://docs.docker.com/engine/reference/run/)
+  
+- dockerfile for exp4
+
+``FROM node:12-alpine
+
+WORKDIR /app
+
+COPY . .
+
+RUN yarn install --production
+
+CMD ["node","/app/src/index.js"]
+``
